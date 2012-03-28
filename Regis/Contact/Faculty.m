@@ -8,26 +8,12 @@
 
 #import "Faculty.h"
 
-
 @implementation Faculty
 
-@synthesize firstName_;
-@synthesize lastName_;
-
-@synthesize phone_;
-@synthesize email_;
-@synthesize url_;
-
-- (id) initWithFirstName:(NSString *)firstName andLastName:(NSString *)lastName andPhone:(NSString *)phone andEmail:(NSString *)email andURL:(NSString *)url
-{
-    self = [super init];
-    
-    self.firstName_ = firstName;
-    self.lastName_  = lastName;
-    self.phone_ = phone;
-    self.email_ = email;
-    self.url_ = url;
-    return self;
-}
+@synthesize firstName = firstName_;
+@synthesize lastName = lastName_;
+@synthesize busPhone = busPhone_;
+@synthesize email = email_;
+@synthesize url = url_;
 
 @end

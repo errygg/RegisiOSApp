@@ -19,7 +19,7 @@
     
 }
 
-@property (nonatomic, retain) School *selectedSchool;
-@property (nonatomic, retain) NSArray *objects;
+//@property (nonatomic, retain) School *selectedSchool;
+//@property (nonatomic, retain) NSArray *objects;
 
 @end

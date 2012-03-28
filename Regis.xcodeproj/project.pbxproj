@@ -15,6 +15,13 @@
 		250969B91523981400CA7A28 /* Faculty.m in Sources */ = {isa = PBXBuildFile; fileRef = 250969B81523981400CA7A28 /* Faculty.m */; };
 		250969BD1523985100CA7A28 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 250969BC1523985100CA7A28 /* Course.m */; };
 		250969BF152398F300CA7A28 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 250969BE152398F300CA7A28 /* README.md */; };
+		250969D615239A3300CA7A28 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250969D515239A3300CA7A28 /* CFNetwork.framework */; };
+		250969D815239A3900CA7A28 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250969D715239A3900CA7A28 /* MapKit.framework */; };
+		250969DA15239A5000CA7A28 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250969D915239A5000CA7A28 /* MobileCoreServices.framework */; };
+		250969DC15239A5800CA7A28 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250969DB15239A5800CA7A28 /* Security.framework */; };
+		250969DE15239A6100CA7A28 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250969DD15239A6100CA7A28 /* SystemConfiguration.framework */; };
+		250969E015239A6D00CA7A28 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 250969DF15239A6D00CA7A28 /* libxml2.dylib */; };
+		250969E315239C3100CA7A28 /* School.m in Sources */ = {isa = PBXBuildFile; fileRef = 250969E215239C3100CA7A28 /* School.m */; };
 		255F08DF152385AF00478183 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 255F08DE152385AF00478183 /* UIKit.framework */; };
 		255F08E1152385AF00478183 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 255F08E0152385AF00478183 /* Foundation.framework */; };
 		255F08E3152385AF00478183 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 255F08E2152385AF00478183 /* CoreGraphics.framework */; };
@@ -74,6 +81,7 @@
 		25834B351523949B00B2331C /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25834B231523949B00B2331C /* TwitterViewController.m */; };
 		25834B361523949B00B2331C /* YouTubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25834B261523949B00B2331C /* YouTubeViewController.m */; };
 		25834B38152394FA00B2331C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25834B37152394FA00B2331C /* MainStoryboard.storyboard */; };
+		25ED6A401523A1FF0000C755 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 250969CB1523990F00CA7A28 /* libRestKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +113,13 @@
 			remoteGlobalIDString = 25160E78145651060060A5C5;
 			remoteInfo = RestKitFrameworkTests;
 		};
+		25ED6A3D1523A0B90000C755 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 250969C01523990F00CA7A28 /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +141,14 @@
 		250969BC1523985100CA7A28 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
 		250969BE152398F300CA7A28 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		250969C01523990F00CA7A28 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
+		250969D515239A3300CA7A28 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		250969D715239A3900CA7A28 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		250969D915239A5000CA7A28 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		250969DB15239A5800CA7A28 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		250969DD15239A6100CA7A28 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		250969DF15239A6D00CA7A28 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		250969E115239C3100CA7A28 /* School.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = School.h; sourceTree = "<group>"; };
+		250969E215239C3100CA7A28 /* School.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = School.m; sourceTree = "<group>"; };
 		255F08DA152385AF00478183 /* Regis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Regis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		255F08DE152385AF00478183 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		255F08E0152385AF00478183 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -213,6 +236,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25ED6A401523A1FF0000C755 /* libRestKit.a in Frameworks */,
+				250969E015239A6D00CA7A28 /* libxml2.dylib in Frameworks */,
+				250969DE15239A6100CA7A28 /* SystemConfiguration.framework in Frameworks */,
+				250969DC15239A5800CA7A28 /* Security.framework in Frameworks */,
+				250969DA15239A5000CA7A28 /* MobileCoreServices.framework in Frameworks */,
+				250969D815239A3900CA7A28 /* MapKit.framework in Frameworks */,
+				250969D615239A3300CA7A28 /* CFNetwork.framework in Frameworks */,
 				255F08DF152385AF00478183 /* UIKit.framework in Frameworks */,
 				255F08E1152385AF00478183 /* Foundation.framework in Frameworks */,
 				255F08E3152385AF00478183 /* CoreGraphics.framework in Frameworks */,
@@ -255,6 +285,7 @@
 		255F08CF152385AF00478183 = {
 			isa = PBXGroup;
 			children = (
+				250969DF15239A6D00CA7A28 /* libxml2.dylib */,
 				250969C01523990F00CA7A28 /* RestKit.xcodeproj */,
 				250969A6152397AF00CA7A28 /* RSSKit */,
 				25834AB7152392E200B2331C /* Images */,
@@ -275,6 +306,11 @@
 		255F08DD152385AF00478183 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				250969DD15239A6100CA7A28 /* SystemConfiguration.framework */,
+				250969DB15239A5800CA7A28 /* Security.framework */,
+				250969D915239A5000CA7A28 /* MobileCoreServices.framework */,
+				250969D715239A3900CA7A28 /* MapKit.framework */,
+				250969D515239A3300CA7A28 /* CFNetwork.framework */,
 				255F08DE152385AF00478183 /* UIKit.framework */,
 				255F08E0152385AF00478183 /* Foundation.framework */,
 				255F08E2152385AF00478183 /* CoreGraphics.framework */,
@@ -388,6 +424,8 @@
 				25834B0D1523949B00B2331C /* SchoolViewController.m */,
 				25834B0E1523949B00B2331C /* TermsViewController.h */,
 				25834B0F1523949B00B2331C /* TermsViewController.m */,
+				250969E115239C3100CA7A28 /* School.h */,
+				250969E215239C3100CA7A28 /* School.m */,
 			);
 			path = Course;
 			sourceTree = "<group>";
@@ -473,6 +511,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				25ED6A3E1523A0B90000C755 /* PBXTargetDependency */,
 			);
 			name = Regis;
 			productName = Regis;
@@ -619,10 +658,19 @@
 				250969B7152397E100CA7A28 /* Annotations.m in Sources */,
 				250969B91523981400CA7A28 /* Faculty.m in Sources */,
 				250969BD1523985100CA7A28 /* Course.m in Sources */,
+				250969E315239C3100CA7A28 /* School.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25ED6A3E1523A0B90000C755 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = 25ED6A3D1523A0B90000C755 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		255F08E9152385AF00478183 /* InfoPlist.strings */ = {
@@ -688,7 +736,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Regis/Regis-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/RestKit/Build\"/**";
 				INFOPLIST_FILE = "Regis/Regis-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -699,7 +752,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Regis/Regis-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/RestKit/Build\"/**";
 				INFOPLIST_FILE = "Regis/Regis-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

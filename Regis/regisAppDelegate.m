@@ -7,6 +7,9 @@
 //
 
 #import "regisAppDelegate.h"
+#import <RestKit/RestKit.h>
+
+NSString *gRegisApplicationBaseURL = nil;
 
 @implementation regisAppDelegate
 
@@ -14,13 +17,20 @@
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
+@synthesize currentlySelectedBlogItem = currentlySelectedBlogItem_;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+
+    // Localhost URL for testing
+    gRegisApplicationBaseURL = @"http://localhost:8080";
+    
+    // Interim URL until the cloud host is running
+    //gRegisApplicationBaseURL = @"http://ec2-107-22-73-92.compute-1.amazonaws.com";
+    
+    // Regis Cloud URL
+    // TBD
+    
     return YES;
 }
 

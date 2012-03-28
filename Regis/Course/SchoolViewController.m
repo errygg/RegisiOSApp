@@ -8,6 +8,7 @@
 
 #import "SchoolViewController.h"
 #import "School.h"
+#import "RegisApplication.h"
 
 @implementation SchoolViewController
 
@@ -31,7 +32,7 @@
 - (void)viewDidLoad
 {
     if (self) {
-        RKObjectManager *objectManager = [RKObjectManager objectManagerWithBaseURL:gRegisApplicationBaseURL];
+//        RKObjectManager *objectManager = [RKObjectManager objectManagerWithBaseURL:gRegisApplicationBaseURL];
         
     }
     [super viewDidLoad];

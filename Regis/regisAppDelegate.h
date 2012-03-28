@@ -7,14 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RSS.h"
 
-@interface regisAppDelegate : UIResponder <UIApplicationDelegate>
+@class RSS;
+
+@interface regisAppDelegate : UIResponder <UIApplicationDelegate> {
+    RSS *currentlySelectedBlogItem_;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+@property (readwrite, retain) RSS *currentlySelectedBlogItem;
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
