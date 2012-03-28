@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		250969B1152397AF00CA7A28 /* RSS.m in Sources */ = {isa = PBXBuildFile; fileRef = 250969A8152397AF00CA7A28 /* RSS.m */; };
+		250969B2152397AF00CA7A28 /* RSSEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 250969AB152397AF00CA7A28 /* RSSEntry.m */; };
+		250969B3152397AF00CA7A28 /* RSSFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 250969AD152397AF00CA7A28 /* RSSFeed.m */; };
+		250969B4152397AF00CA7A28 /* RSSParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 250969B0152397AF00CA7A28 /* RSSParser.m */; };
+		250969B7152397E100CA7A28 /* Annotations.m in Sources */ = {isa = PBXBuildFile; fileRef = 250969B6152397E100CA7A28 /* Annotations.m */; };
+		250969B91523981400CA7A28 /* Faculty.m in Sources */ = {isa = PBXBuildFile; fileRef = 250969B81523981400CA7A28 /* Faculty.m */; };
+		250969BD1523985100CA7A28 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 250969BC1523985100CA7A28 /* Course.m */; };
+		250969BF152398F300CA7A28 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 250969BE152398F300CA7A28 /* README.md */; };
 		255F08DF152385AF00478183 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 255F08DE152385AF00478183 /* UIKit.framework */; };
 		255F08E1152385AF00478183 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 255F08E0152385AF00478183 /* Foundation.framework */; };
 		255F08E3152385AF00478183 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 255F08E2152385AF00478183 /* CoreGraphics.framework */; };
@@ -68,7 +76,56 @@
 		25834B38152394FA00B2331C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25834B37152394FA00B2331C /* MainStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		250969CA1523990F00CA7A28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 250969C01523990F00CA7A28 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		250969CC1523990F00CA7A28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 250969C01523990F00CA7A28 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		250969CE1523990F00CA7A28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 250969C01523990F00CA7A28 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		250969D01523990F00CA7A28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 250969C01523990F00CA7A28 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		250969A7152397AF00CA7A28 /* RSS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSS.h; sourceTree = "<group>"; };
+		250969A8152397AF00CA7A28 /* RSS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSS.m; sourceTree = "<group>"; };
+		250969A9152397AF00CA7A28 /* RSSDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSDefines.h; sourceTree = "<group>"; };
+		250969AA152397AF00CA7A28 /* RSSEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSEntry.h; sourceTree = "<group>"; };
+		250969AB152397AF00CA7A28 /* RSSEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSEntry.m; sourceTree = "<group>"; };
+		250969AC152397AF00CA7A28 /* RSSFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSFeed.h; sourceTree = "<group>"; };
+		250969AD152397AF00CA7A28 /* RSSFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSFeed.m; sourceTree = "<group>"; };
+		250969AE152397AF00CA7A28 /* RSSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSKit.h; sourceTree = "<group>"; };
+		250969AF152397AF00CA7A28 /* RSSParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSParser.h; sourceTree = "<group>"; };
+		250969B0152397AF00CA7A28 /* RSSParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSParser.m; sourceTree = "<group>"; };
+		250969B5152397E100CA7A28 /* Annotations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotations.h; sourceTree = "<group>"; };
+		250969B6152397E100CA7A28 /* Annotations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotations.m; sourceTree = "<group>"; };
+		250969B81523981400CA7A28 /* Faculty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Faculty.m; sourceTree = "<group>"; };
+		250969BA1523983100CA7A28 /* RegisApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisApplication.h; sourceTree = "<group>"; };
+		250969BB1523985100CA7A28 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		250969BC1523985100CA7A28 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+		250969BE152398F300CA7A28 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		250969C01523990F00CA7A28 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
 		255F08DA152385AF00478183 /* Regis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Regis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		255F08DE152385AF00478183 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		255F08E0152385AF00478183 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -166,9 +223,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		250969A6152397AF00CA7A28 /* RSSKit */ = {
+			isa = PBXGroup;
+			children = (
+				250969A7152397AF00CA7A28 /* RSS.h */,
+				250969A8152397AF00CA7A28 /* RSS.m */,
+				250969A9152397AF00CA7A28 /* RSSDefines.h */,
+				250969AA152397AF00CA7A28 /* RSSEntry.h */,
+				250969AB152397AF00CA7A28 /* RSSEntry.m */,
+				250969AC152397AF00CA7A28 /* RSSFeed.h */,
+				250969AD152397AF00CA7A28 /* RSSFeed.m */,
+				250969AE152397AF00CA7A28 /* RSSKit.h */,
+				250969AF152397AF00CA7A28 /* RSSParser.h */,
+				250969B0152397AF00CA7A28 /* RSSParser.m */,
+			);
+			name = RSSKit;
+			path = Regis/RSSKit;
+			sourceTree = "<group>";
+		};
+		250969C11523990F00CA7A28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				250969CB1523990F00CA7A28 /* libRestKit.a */,
+				250969CD1523990F00CA7A28 /* RestKitTests.octest */,
+				250969CF1523990F00CA7A28 /* RestKit.framework */,
+				250969D11523990F00CA7A28 /* RestKitFrameworkTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		255F08CF152385AF00478183 = {
 			isa = PBXGroup;
 			children = (
+				250969C01523990F00CA7A28 /* RestKit.xcodeproj */,
+				250969A6152397AF00CA7A28 /* RSSKit */,
 				25834AB7152392E200B2331C /* Images */,
 				255F08E6152385AF00478183 /* Regis */,
 				255F08DD152385AF00478183 /* Frameworks */,
@@ -218,6 +306,8 @@
 		255F08E7152385AF00478183 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				250969BE152398F300CA7A28 /* README.md */,
+				250969BA1523983100CA7A28 /* RegisApplication.h */,
 				25834B37152394FA00B2331C /* MainStoryboard.storyboard */,
 				255F08E8152385AF00478183 /* Regis-Info.plist */,
 				255F08E9152385AF00478183 /* InfoPlist.strings */,
@@ -274,6 +364,7 @@
 				25834AFE1523949B00B2331C /* DetailedFacultyViewController.h */,
 				25834AFF1523949B00B2331C /* DetailedFacultyViewController.m */,
 				25834B001523949B00B2331C /* Faculty.h */,
+				250969B81523981400CA7A28 /* Faculty.m */,
 				25834B011523949B00B2331C /* FacultyViewController.h */,
 				25834B021523949B00B2331C /* FacultyViewController.m */,
 			);
@@ -283,6 +374,8 @@
 		25834B031523949B00B2331C /* Course */ = {
 			isa = PBXGroup;
 			children = (
+				250969BB1523985100CA7A28 /* Course.h */,
+				250969BC1523985100CA7A28 /* Course.m */,
 				25834B041523949B00B2331C /* CoursesViewController.h */,
 				25834B051523949B00B2331C /* CoursesViewController.m */,
 				25834B061523949B00B2331C /* DegreesViewController.h */,
@@ -329,6 +422,8 @@
 		25834B191523949B00B2331C /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				250969B5152397E100CA7A28 /* Annotations.h */,
+				250969B6152397E100CA7A28 /* Annotations.m */,
 				25834B1A1523949B00B2331C /* MapViewController.h */,
 				25834B1B1523949B00B2331C /* MapViewController.m */,
 			);
@@ -402,12 +497,49 @@
 			mainGroup = 255F08CF152385AF00478183;
 			productRefGroup = 255F08DB152385AF00478183 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 250969C11523990F00CA7A28 /* Products */;
+					ProjectRef = 250969C01523990F00CA7A28 /* RestKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				255F08D9152385AF00478183 /* Regis */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		250969CB1523990F00CA7A28 /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = 250969CA1523990F00CA7A28 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		250969CD1523990F00CA7A28 /* RestKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.octest;
+			remoteRef = 250969CC1523990F00CA7A28 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		250969CF1523990F00CA7A28 /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = 250969CE1523990F00CA7A28 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		250969D11523990F00CA7A28 /* RestKitFrameworkTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.octest;
+			remoteRef = 250969D01523990F00CA7A28 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		255F08D8152385AF00478183 /* Resources */ = {
@@ -450,6 +582,7 @@
 				25834AFA152392E200B2331C /* twitter.png in Resources */,
 				25834AFB152392E200B2331C /* youtube.png in Resources */,
 				25834B38152394FA00B2331C /* MainStoryboard.storyboard in Resources */,
+				250969BF152398F300CA7A28 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +612,13 @@
 				25834B341523949B00B2331C /* NewsViewController.m in Sources */,
 				25834B351523949B00B2331C /* TwitterViewController.m in Sources */,
 				25834B361523949B00B2331C /* YouTubeViewController.m in Sources */,
+				250969B1152397AF00CA7A28 /* RSS.m in Sources */,
+				250969B2152397AF00CA7A28 /* RSSEntry.m in Sources */,
+				250969B3152397AF00CA7A28 /* RSSFeed.m in Sources */,
+				250969B4152397AF00CA7A28 /* RSSParser.m in Sources */,
+				250969B7152397E100CA7A28 /* Annotations.m in Sources */,
+				250969B91523981400CA7A28 /* Faculty.m in Sources */,
+				250969BD1523985100CA7A28 /* Course.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
