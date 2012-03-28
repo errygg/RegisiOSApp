@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		255F08DF152385AF00478183 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 255F08DE152385AF00478183 /* UIKit.framework */; };
+		255F08E1152385AF00478183 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 255F08E0152385AF00478183 /* Foundation.framework */; };
+		255F08E3152385AF00478183 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 255F08E2152385AF00478183 /* CoreGraphics.framework */; };
+		255F08E5152385AF00478183 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 255F08E4152385AF00478183 /* CoreData.framework */; };
+		255F08EB152385AF00478183 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 255F08E9152385AF00478183 /* InfoPlist.strings */; };
+		255F08ED152385AF00478183 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 255F08EC152385AF00478183 /* main.m */; };
+		255F08F1152385AF00478183 /* regisAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 255F08F0152385AF00478183 /* regisAppDelegate.m */; };
+		255F08F4152385AF00478183 /* Regis.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 255F08F2152385AF00478183 /* Regis.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		255F08DA152385AF00478183 /* Regis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Regis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		255F08DE152385AF00478183 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		255F08E0152385AF00478183 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		255F08E2152385AF00478183 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		255F08E4152385AF00478183 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		255F08E8152385AF00478183 /* Regis-Info.plist */ = {isa = PBXFileReference; path = "Regis-Info.plist"; sourceTree = "<group>"; };
+		255F08EA152385AF00478183 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		255F08EC152385AF00478183 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		255F08EE152385AF00478183 /* Regis-Prefix.pch */ = {isa = PBXFileReference; path = "Regis-Prefix.pch"; sourceTree = "<group>"; };
+		255F08EF152385AF00478183 /* regisAppDelegate.h */ = {isa = PBXFileReference; path = regisAppDelegate.h; sourceTree = "<group>"; };
+		255F08F0152385AF00478183 /* regisAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = regisAppDelegate.m; sourceTree = "<group>"; };
+		255F08F3152385AF00478183 /* Regis.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Regis.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		255F08D7152385AF00478183 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				255F08DF152385AF00478183 /* UIKit.framework in Frameworks */,
+				255F08E1152385AF00478183 /* Foundation.framework in Frameworks */,
+				255F08E3152385AF00478183 /* CoreGraphics.framework in Frameworks */,
+				255F08E5152385AF00478183 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		255F08CF152385AF00478183 = {
+			isa = PBXGroup;
+			children = (
+				255F08E6152385AF00478183 /* Regis */,
+				255F08DD152385AF00478183 /* Frameworks */,
+				255F08DB152385AF00478183 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		255F08DB152385AF00478183 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				255F08DA152385AF00478183 /* Regis.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		255F08DD152385AF00478183 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				255F08DE152385AF00478183 /* UIKit.framework */,
+				255F08E0152385AF00478183 /* Foundation.framework */,
+				255F08E2152385AF00478183 /* CoreGraphics.framework */,
+				255F08E4152385AF00478183 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		255F08E6152385AF00478183 /* Regis */ = {
+			isa = PBXGroup;
+			children = (
+				255F08EF152385AF00478183 /* regisAppDelegate.h */,
+				255F08F0152385AF00478183 /* regisAppDelegate.m */,
+				255F08F2152385AF00478183 /* Regis.xcdatamodeld */,
+				255F08E7152385AF00478183 /* Supporting Files */,
+			);
+			path = Regis;
+			sourceTree = "<group>";
+		};
+		255F08E7152385AF00478183 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				255F08E8152385AF00478183 /* Regis-Info.plist */,
+				255F08E9152385AF00478183 /* InfoPlist.strings */,
+				255F08EC152385AF00478183 /* main.m */,
+				255F08EE152385AF00478183 /* Regis-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		255F08D9152385AF00478183 /* Regis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 255F08F7152385AF00478183 /* Build configuration list for PBXNativeTarget "Regis" */;
+			buildPhases = (
+				255F08D6152385AF00478183 /* Sources */,
+				255F08D7152385AF00478183 /* Frameworks */,
+				255F08D8152385AF00478183 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Regis;
+			productName = Regis;
+			productReference = 255F08DA152385AF00478183 /* Regis.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		255F08D1152385AF00478183 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 255F08D4152385AF00478183 /* Build configuration list for PBXProject "Regis" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 255F08CF152385AF00478183;
+			productRefGroup = 255F08DB152385AF00478183 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				255F08D9152385AF00478183 /* Regis */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		255F08D8152385AF00478183 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				255F08EB152385AF00478183 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		255F08D6152385AF00478183 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				255F08ED152385AF00478183 /* main.m in Sources */,
+				255F08F1152385AF00478183 /* regisAppDelegate.m in Sources */,
+				255F08F4152385AF00478183 /* Regis.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		255F08E9152385AF00478183 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				255F08EA152385AF00478183 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		255F08F5152385AF00478183 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		255F08F6152385AF00478183 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		255F08F8152385AF00478183 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Regis/Regis-Prefix.pch";
+				INFOPLIST_FILE = "Regis/Regis-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		255F08F9152385AF00478183 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Regis/Regis-Prefix.pch";
+				INFOPLIST_FILE = "Regis/Regis-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		255F08D4152385AF00478183 /* Build configuration list for PBXProject "Regis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				255F08F5152385AF00478183 /* Debug */,
+				255F08F6152385AF00478183 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		255F08F7152385AF00478183 /* Build configuration list for PBXNativeTarget "Regis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				255F08F8152385AF00478183 /* Debug */,
+				255F08F9152385AF00478183 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		255F08F2152385AF00478183 /* Regis.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				255F08F3152385AF00478183 /* Regis.xcdatamodel */,
+			);
+			currentVersion = 255F08F3152385AF00478183 /* Regis.xcdatamodel */;
+			path = Regis.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 255F08D1152385AF00478183 /* Project object */;
+}
