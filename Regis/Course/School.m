@@ -10,4 +10,6 @@
 
 @implementation School
 
+@synthesize name = name_;
+
 @end

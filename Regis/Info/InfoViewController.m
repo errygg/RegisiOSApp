@@ -43,7 +43,7 @@
         NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"tel:(720)258-6439"]];
         [[UIApplication sharedApplication] openURL:url];
     } else {
-        UIAlertView *invalidDevice = [[UIAlertView alloc] initWithTitle:@"Alert" message:@"Your device doesn't support this feature." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *invalidDevice = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Your device doesn't support this feature." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [invalidDevice show];
     }
 }

@@ -12,44 +12,83 @@
 
 @implementation SchoolViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+@synthesize school = school_;
+@synthesize schoolArray = schoolArray_;
+@synthesize tableView;
 
-    return self;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
-}
-
-#pragma mark - View lifecycle
-
-- (void)viewDidLoad
-{
-    if (self) {
-//        RKObjectManager *objectManager = [RKObjectManager objectManagerWithBaseURL:gRegisApplicationBaseURL];
-        
-    }
+- (void)viewDidLoad {    
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    [self loadSchools];
 }
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return schoolArray_.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSLog(@"Gets here");
+    static NSString *CellIdentifier = @"SchoolCell";
+    
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if( cell == nil ) {
+        
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+        cell.textLabel.font = [UIFont boldSystemFontOfSize:14];
+        cell.textLabel.lineBreakMode = UILineBreakModeWordWrap;
+        cell.textLabel.numberOfLines = 2;
+        NSString *name = [[schoolArray_ objectAtIndex:indexPath.row] name];
+        name = [name stringByAppendingString:@" "];
+        //cell.imageView.image = [UIImage imageNamed:@"man.png"];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;        
+    }
+    
+    return cell;    
+    
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    /*DetailedFacultyViewController *detail = [self.storyboard instantiateViewControllerWithIdentifier:@"AddressDetail"];
+    [detail setFacultySelected:[facultyArray_ objectAtIndex:indexPath.row]];
+    [self.navigationController pushViewController:detail animated:YES];*/
+    
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+
+- (void) loadSchools {
+    
+    RKLogConfigureByName("RestKit/ObjectMapping", RKLogLevelTrace);
+    RKObjectManager *manager = [RKObjectManager objectManagerWithBaseURL:gRegisApplicationBaseURL];
+    
+    RKObjectMapping *objectMapping = [RKObjectMapping mappingForClass:[School class]];
+    [manager.mappingProvider setMapping:objectMapping forKeyPath:@"schools"];
+    [objectMapping mapKeyPath:@"name" toAttribute:@"name"];
+    [objectMapping mapKeyPath:@"id" toAttribute:@"schoolId"];
+    
+    [manager loadObjectsAtResourcePath:@"/schools" delegate:self];
+    
+    
+}
+
+- (void)objectLoader:(RKObjectLoader *)objectLoader didLoadObjects:(NSArray *)objects {
+    schoolArray_ = objects;
+    [self.tableView reloadData];
+}
+
+- (void)objectLoader:(RKObjectLoader *)objectLoader didFailWithError:(NSError *)error {
+    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Error!" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
 }
 
 @end

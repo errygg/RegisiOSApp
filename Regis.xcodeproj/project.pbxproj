@@ -420,12 +420,12 @@
 				25834B091523949B00B2331C /* DetailViewController.m */,
 				25834B0A1523949B00B2331C /* ProgramViewController.h */,
 				25834B0B1523949B00B2331C /* ProgramViewController.m */,
+				250969E115239C3100CA7A28 /* School.h */,
+				250969E215239C3100CA7A28 /* School.m */,
 				25834B0C1523949B00B2331C /* SchoolViewController.h */,
 				25834B0D1523949B00B2331C /* SchoolViewController.m */,
 				25834B0E1523949B00B2331C /* TermsViewController.h */,
 				25834B0F1523949B00B2331C /* TermsViewController.m */,
-				250969E115239C3100CA7A28 /* School.h */,
-				250969E215239C3100CA7A28 /* School.m */,
 			);
 			path = Course;
 			sourceTree = "<group>";

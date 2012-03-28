@@ -11,36 +11,25 @@
 #import "NewsViewController.h"
 #import "MapViewController.h"
 #import "FacultyViewController.h"
-#import "DegreesViewController.h"
 #import "TwitterViewController.h"
 #import "FacebookViewController.h"
 #import "YouTubeViewController.h"
+#import "InfoViewController.h"
+#import "SchoolViewController.h"
 
 @implementation HomeViewController
 
-- (void)viewDidLoad {
-
-    [super viewDidLoad];
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:YES];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
-
-    // Clear the RKClient singleton to isolate the views
+    
     [RKClient setSharedClient:nil];
     [RKObjectManager setSharedManager:nil];
-
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
 
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-
-}
-
-- (IBAction)openAddressView:(id)sender {
-
-    NSLog(@"Opening Faculty viewer");
-    FacultyViewController *facultyView = [self.storyboard instantiateViewControllerWithIdentifier:@"Faculty"];
-    NSLog(@"Controller: %@", facultyView);
-    [self.navigationController pushViewController:facultyView animated:YES];
 
 }
 
@@ -62,15 +51,6 @@
 
 }
 
-- (IBAction)openCourseView:(id)sender {
-
-    NSLog(@"Opening Course view");
-    DegreesViewController *degreesView = [self.storyboard instantiateViewControllerWithIdentifier:@"Degrees"];
-    NSLog(@"Controller: %@", degreesView);
-    [self.navigationController pushViewController:degreesView animated:YES];
-
-}
-
 - (IBAction)openTwitterView:(id)sender {
 
     NSLog(@"Opening Twitter view");
@@ -87,6 +67,14 @@
     NSLog(@"Controller: %@", facebookView);
     [self.navigationController pushViewController:facebookView animated:YES];
 
+}
+
+- (IBAction)openInfoView:(id)sender {
+    NSLog(@"Opening Info view");
+    InfoViewController *infoView = [self.storyboard instantiateViewControllerWithIdentifier:@"Info"];
+    NSLog(@"Controller: %@", infoView);
+    //infoView.modalPresentationStyle = UIModalTransitionStyleFlipHorizontal;
+    [self.navigationController presentModalViewController:infoView animated:YES];
 }
 
 @end

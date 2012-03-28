@@ -10,16 +10,15 @@
 #import <RestKit/RestKit.h>
 #import "School.h"
 
-@interface SchoolViewController : UITableViewController
-    <RKObjectLoaderDelegate, UITableViewDelegate>
-{
-        
-    School *selectedSchool_;
-    NSArray *objects_;
-    
+@interface SchoolViewController : UIViewController <RKObjectLoaderDelegate> {
+    School *school_;
+    NSArray *schoolArray_;
 }
 
-//@property (nonatomic, retain) School *selectedSchool;
-//@property (nonatomic, retain) NSArray *objects;
+@property (nonatomic, retain) School *school;
+@property (nonatomic, retain) NSArray *schoolArray;
+@property (nonatomic, retain) IBOutlet UITableView *tableView;
+
+- (void) loadSchools;
 
 @end

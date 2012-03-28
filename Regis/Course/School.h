@@ -8,6 +8,10 @@
 
 #import <CoreData/CoreData.h>
 
-@interface School : NSManagedObject
+@interface School : NSManagedObject {
+    NSString *name_;
+}
+
+@property (nonatomic, retain) NSString *name;
 
 @end
