@@ -64,4 +64,9 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (void)refresh {
+    [self performSelector:@selector(fetchTweets) withObject:nil afterDelay:2.0];
+    [self stopLoading];
+}
+
 @end

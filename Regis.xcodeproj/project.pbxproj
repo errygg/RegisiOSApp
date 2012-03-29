@@ -22,6 +22,8 @@
 		250969DE15239A6100CA7A28 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250969DD15239A6100CA7A28 /* SystemConfiguration.framework */; };
 		250969E015239A6D00CA7A28 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 250969DF15239A6D00CA7A28 /* libxml2.dylib */; };
 		250969E315239C3100CA7A28 /* School.m in Sources */ = {isa = PBXBuildFile; fileRef = 250969E215239C3100CA7A28 /* School.m */; };
+		2515A686152427C900D39AD4 /* PullRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2515A685152427C900D39AD4 /* PullRefreshTableViewController.m */; };
+		2515A6881524280B00D39AD4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2515A6871524280B00D39AD4 /* QuartzCore.framework */; };
 		255F08DF152385AF00478183 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 255F08DE152385AF00478183 /* UIKit.framework */; };
 		255F08E1152385AF00478183 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 255F08E0152385AF00478183 /* Foundation.framework */; };
 		255F08E3152385AF00478183 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 255F08E2152385AF00478183 /* CoreGraphics.framework */; };
@@ -149,6 +151,9 @@
 		250969DF15239A6D00CA7A28 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		250969E115239C3100CA7A28 /* School.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = School.h; sourceTree = "<group>"; };
 		250969E215239C3100CA7A28 /* School.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = School.m; sourceTree = "<group>"; };
+		2515A684152427C900D39AD4 /* PullRefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullRefreshTableViewController.h; sourceTree = "<group>"; };
+		2515A685152427C900D39AD4 /* PullRefreshTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullRefreshTableViewController.m; sourceTree = "<group>"; };
+		2515A6871524280B00D39AD4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		255F08DA152385AF00478183 /* Regis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Regis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		255F08DE152385AF00478183 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		255F08E0152385AF00478183 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -236,6 +241,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2515A6881524280B00D39AD4 /* QuartzCore.framework in Frameworks */,
 				25ED6A401523A1FF0000C755 /* libRestKit.a in Frameworks */,
 				250969E015239A6D00CA7A28 /* libxml2.dylib in Frameworks */,
 				250969DE15239A6100CA7A28 /* SystemConfiguration.framework in Frameworks */,
@@ -285,9 +291,6 @@
 		255F08CF152385AF00478183 = {
 			isa = PBXGroup;
 			children = (
-				250969DF15239A6D00CA7A28 /* libxml2.dylib */,
-				250969C01523990F00CA7A28 /* RestKit.xcodeproj */,
-				250969A6152397AF00CA7A28 /* RSSKit */,
 				25834AB7152392E200B2331C /* Images */,
 				255F08E6152385AF00478183 /* Regis */,
 				255F08DD152385AF00478183 /* Frameworks */,
@@ -306,6 +309,10 @@
 		255F08DD152385AF00478183 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				250969A6152397AF00CA7A28 /* RSSKit */,
+				250969C01523990F00CA7A28 /* RestKit.xcodeproj */,
+				250969DF15239A6D00CA7A28 /* libxml2.dylib */,
+				2515A6871524280B00D39AD4 /* QuartzCore.framework */,
 				250969DD15239A6100CA7A28 /* SystemConfiguration.framework */,
 				250969DB15239A5800CA7A28 /* Security.framework */,
 				250969D915239A5000CA7A28 /* MobileCoreServices.framework */,
@@ -322,6 +329,8 @@
 		255F08E6152385AF00478183 /* Regis */ = {
 			isa = PBXGroup;
 			children = (
+				2515A684152427C900D39AD4 /* PullRefreshTableViewController.h */,
+				2515A685152427C900D39AD4 /* PullRefreshTableViewController.m */,
 				25834AFD1523949B00B2331C /* Contact */,
 				25834B031523949B00B2331C /* Course */,
 				25834B101523949B00B2331C /* Facebook */,
@@ -659,6 +668,7 @@
 				250969B91523981400CA7A28 /* Faculty.m in Sources */,
 				250969BD1523985100CA7A28 /* Course.m in Sources */,
 				250969E315239C3100CA7A28 /* School.m in Sources */,
+				2515A686152427C900D39AD4 /* PullRefreshTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

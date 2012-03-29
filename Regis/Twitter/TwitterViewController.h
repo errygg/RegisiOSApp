@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PullRefreshTableViewController.h"
 
-@interface TwitterViewController : UITableViewController
+//@interface TwitterViewController : UITableViewController
+@interface TwitterViewController : PullRefreshTableViewController
 
 @property (nonatomic, retain) NSArray *tweets;
 
