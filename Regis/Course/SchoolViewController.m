@@ -12,14 +12,16 @@
 
 @implementation SchoolViewController
 
-@synthesize school = school_;
-@synthesize schoolArray = schoolArray_;
+@synthesize school;
+@synthesize schoolArray;
 @synthesize tableView;
 
-- (void)viewDidLoad {    
+- (void)viewDidLoad {
+    
     [super viewDidLoad];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
     [self loadSchools];
+
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -27,13 +29,12 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return schoolArray_.count;
+    return schoolArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    NSLog(@"Gets here");
-    static NSString *CellIdentifier = @"SchoolCell";
+    static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
@@ -43,9 +44,9 @@
         cell.textLabel.font = [UIFont boldSystemFontOfSize:14];
         cell.textLabel.lineBreakMode = UILineBreakModeWordWrap;
         cell.textLabel.numberOfLines = 2;
-        NSString *name = [[schoolArray_ objectAtIndex:indexPath.row] name];
+        NSString *name = [[schoolArray objectAtIndex:indexPath.row] name];
         name = [name stringByAppendingString:@" "];
-        //cell.imageView.image = [UIImage imageNamed:@"man.png"];
+        cell.textLabel.text = name;
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;        
     }
     
@@ -82,7 +83,7 @@
 }
 
 - (void)objectLoader:(RKObjectLoader *)objectLoader didLoadObjects:(NSArray *)objects {
-    schoolArray_ = objects;
+    schoolArray = objects;
     [self.tableView reloadData];
 }
 

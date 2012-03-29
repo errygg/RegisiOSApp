@@ -10,10 +10,11 @@
 
 @implementation Faculty
 
-@synthesize firstName = firstName_;
-@synthesize lastName = lastName_;
-@synthesize busPhone = busPhone_;
-@synthesize email = email_;
-@synthesize url = url_;
+@synthesize facultyId;
+@synthesize firstName;
+@synthesize lastName;
+@synthesize busPhone;
+@synthesize email;
+@synthesize title;
 
 @end

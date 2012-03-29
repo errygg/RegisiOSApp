@@ -10,10 +10,7 @@
 #import <RestKit/RestKit.h>
 #import "School.h"
 
-@interface SchoolViewController : UIViewController <RKObjectLoaderDelegate> {
-    School *school_;
-    NSArray *schoolArray_;
-}
+@interface SchoolViewController : UIViewController <RKObjectLoaderDelegate>
 
 @property (nonatomic, retain) School *school;
 @property (nonatomic, retain) NSArray *schoolArray;

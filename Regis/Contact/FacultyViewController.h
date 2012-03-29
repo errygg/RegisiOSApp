@@ -7,22 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <RestKit/RestKit.h>
 #import "Faculty.h"
 
-@interface FacultyViewController : UIViewController <RKObjectLoaderDelegate> {
-    
-    Faculty *faculty_;
-    NSArray *facultyArray_;
-    /*UISearchBar *searchBar_;
-    NSMutableArray *searchData_;*/
-    
-}
+@interface FacultyViewController : UIViewController <RKObjectLoaderDelegate>
 
 @property (nonatomic, retain) NSArray *facultyArray;
 @property (nonatomic, retain) Faculty *faculty;
 @property (nonatomic, retain) IBOutlet UITableView *tableView;
-/*@property (nonatomic, retain) UISearchBar *searchBar;
-@property (nonatomic, retain) NSMutableArray *searchData_;*/
 
 - (void) loadFaculty;
 

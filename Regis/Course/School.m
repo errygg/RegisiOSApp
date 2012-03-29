@@ -10,6 +10,7 @@
 
 @implementation School
 
-@synthesize name = name_;
+@synthesize schoolId;
+@synthesize name;
 
 @end

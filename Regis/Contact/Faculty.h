@@ -8,21 +8,13 @@
 
 #import "RegisApplication.h"
 
-@interface Faculty : NSManagedObject {
-    
-    NSString *firstName_;
-    NSString *lastName_;
-    NSString *busPhone_;
-    NSString *email_;
-    NSString *url_;
-    
-}
+@interface Faculty : NSObject
 
+@property (nonatomic, retain) NSNumber *facultyId;
 @property (nonatomic, retain) NSString *firstName;
 @property (nonatomic, retain) NSString *lastName;
 @property (nonatomic, retain) NSString *busPhone;
 @property (nonatomic, retain) NSString *email;
-@property (nonatomic, retain) NSString *url;
-
+@property (nonatomic, retain) NSString *title;
 
 @end

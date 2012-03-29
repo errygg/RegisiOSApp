@@ -11,9 +11,5 @@
 @interface HomeViewController : UIViewController
 
 - (IBAction)openInfoView:(id)sender;
-- (IBAction)openNewsView:(id)sender;
-- (IBAction)openMapView:(id)sender;
-- (IBAction)openTwitterView:(id)sender;
-- (IBAction)openFacebookView:(id)sender;
 
 @end
