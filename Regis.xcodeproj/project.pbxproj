@@ -24,6 +24,8 @@
 		250969E315239C3100CA7A28 /* School.m in Sources */ = {isa = PBXBuildFile; fileRef = 250969E215239C3100CA7A28 /* School.m */; };
 		2515A686152427C900D39AD4 /* PullRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2515A685152427C900D39AD4 /* PullRefreshTableViewController.m */; };
 		2515A6881524280B00D39AD4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2515A6871524280B00D39AD4 /* QuartzCore.framework */; };
+		253DD5A51527CEDA0002940E /* arrow_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 253DD5A31527CED80002940E /* arrow_circle.png */; };
+		253DD5A61527CEDA0002940E /* arrow_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 253DD5A41527CED90002940E /* arrow_circle@2x.png */; };
 		255F08DF152385AF00478183 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 255F08DE152385AF00478183 /* UIKit.framework */; };
 		255F08E1152385AF00478183 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 255F08E0152385AF00478183 /* Foundation.framework */; };
 		255F08E3152385AF00478183 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 255F08E2152385AF00478183 /* CoreGraphics.framework */; };
@@ -154,6 +156,8 @@
 		2515A684152427C900D39AD4 /* PullRefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullRefreshTableViewController.h; sourceTree = "<group>"; };
 		2515A685152427C900D39AD4 /* PullRefreshTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullRefreshTableViewController.m; sourceTree = "<group>"; };
 		2515A6871524280B00D39AD4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		253DD5A31527CED80002940E /* arrow_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_circle.png; sourceTree = "<group>"; };
+		253DD5A41527CED90002940E /* arrow_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_circle@2x.png"; sourceTree = "<group>"; };
 		255F08DA152385AF00478183 /* Regis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Regis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		255F08DE152385AF00478183 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		255F08E0152385AF00478183 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -365,6 +369,8 @@
 		25834AB7152392E200B2331C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				253DD5A31527CED80002940E /* arrow_circle.png */,
+				253DD5A41527CED90002940E /* arrow_circle@2x.png */,
 				25834AB8152392E200B2331C /* address_book.png */,
 				25834AB9152392E200B2331C /* arrow.png */,
 				25834ABA152392E200B2331C /* arrow@2x.png */,
@@ -631,6 +637,8 @@
 				25834AFB152392E200B2331C /* youtube.png in Resources */,
 				25834B38152394FA00B2331C /* MainStoryboard.storyboard in Resources */,
 				250969BF152398F300CA7A28 /* README.md in Resources */,
+				253DD5A51527CEDA0002940E /* arrow_circle.png in Resources */,
+				253DD5A61527CEDA0002940E /* arrow_circle@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
