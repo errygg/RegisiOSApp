@@ -7,6 +7,7 @@
 //
 
 #import "TwitterViewController.h"
+#import <Twitter/Twitter.h>
 
 @implementation TwitterViewController
 
@@ -19,7 +20,7 @@
 }
 
 - (void) fetchTweets {
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+   /* dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSData* data = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://api.twitter.com/1/statuses/user_timeline.json?screen_name=beinfluential"]];
         NSError* error;
         if( error ) {
@@ -33,8 +34,22 @@
                 [self.tableView reloadData];
             });
         }
-    });
+    });*/
+    NSURL *regisTwitterUrl = [NSURL URLWithString:@"http://api.twitter.com/1/statuses/user_timeline.json?screen_name=beinfluential"];
+    
+    TWRequest *postRequest = [[TWRequest alloc] initWithURL:regisTwitterUrl parameters:nil requestMethod:TWRequestMethodGET];
+    //[postRequest setAccount:self.account];
+    [postRequest performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
+        if( [urlResponse statusCode] == 200 ) {
+            NSError *jsonError = nil;
+            tweets = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:&jsonError];
+            dispatch_sync(dispatch_get_main_queue(), ^{
+                [self.tableView reloadData];
+            });
+        }
+    }];
 }
+
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return tweets.count;

@@ -85,6 +85,7 @@
 		25834B351523949B00B2331C /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25834B231523949B00B2331C /* TwitterViewController.m */; };
 		25834B361523949B00B2331C /* YouTubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25834B261523949B00B2331C /* YouTubeViewController.m */; };
 		25834B38152394FA00B2331C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25834B37152394FA00B2331C /* MainStoryboard.storyboard */; };
+		259124F41527D6710059F60A /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 259124F31527D6710059F60A /* Twitter.framework */; };
 		25ED6A401523A1FF0000C755 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 250969CB1523990F00CA7A28 /* libRestKit.a */; };
 /* End PBXBuildFile section */
 
@@ -238,6 +239,7 @@
 		25834B251523949B00B2331C /* YouTubeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeViewController.h; sourceTree = "<group>"; };
 		25834B261523949B00B2331C /* YouTubeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeViewController.m; sourceTree = "<group>"; };
 		25834B37152394FA00B2331C /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = ../MainStoryboard.storyboard; sourceTree = "<group>"; };
+		259124F31527D6710059F60A /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +247,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				259124F41527D6710059F60A /* Twitter.framework in Frameworks */,
 				2515A6881524280B00D39AD4 /* QuartzCore.framework in Frameworks */,
 				25ED6A401523A1FF0000C755 /* libRestKit.a in Frameworks */,
 				250969E015239A6D00CA7A28 /* libxml2.dylib in Frameworks */,
@@ -313,6 +316,7 @@
 		255F08DD152385AF00478183 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				259124F31527D6710059F60A /* Twitter.framework */,
 				250969A6152397AF00CA7A28 /* RSSKit */,
 				250969C01523990F00CA7A28 /* RestKit.xcodeproj */,
 				250969DF15239A6D00CA7A28 /* libxml2.dylib */,
