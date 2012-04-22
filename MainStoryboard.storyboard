@@ -1,10 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="10K549" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="ECN-Hg-SnV">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="ECN-Hg-SnV">
     <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
+        <!--Map View Controller - Map-->
         <scene sceneID="hzb-3A-IqF">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q0M-Ls-H64" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -32,6 +34,7 @@
             </objects>
             <point key="canvasLocation" x="1151" y="1161"/>
         </scene>
+        <!--Twitter View Controller - Twitter-->
         <scene sceneID="qhq-KF-YCq">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7F2-Vk-I1W" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -77,6 +80,7 @@
             </objects>
             <point key="canvasLocation" x="1165" y="1782"/>
         </scene>
+        <!--Facebook View Controller-->
         <scene sceneID="oq7-9B-ezs">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R6g-dY-Z1x" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -91,20 +95,37 @@
             </objects>
             <point key="canvasLocation" x="1165" y="2375"/>
         </scene>
-        <scene sceneID="Tcd-Dw-O8K">
+        <!--You Tube View Controller-->
+        <scene sceneID="hyT-QO-CO9">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c6m-1y-kd1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="YouTube" title="YouTube View Controller" id="Phn-Sd-aeT" customClass="YouTubeViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8h9-9n-V9c">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="83Z-TW-v7r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="AOo-jy-mAv" customClass="YouTubeViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="u6o-bx-8r5">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="aRk-l5-hdU"/>
-                </viewController>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="aoR-XL-oZF">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="AOo-jy-mAv" id="BO6-fP-1sg"/>
+                            <outlet property="delegate" destination="AOo-jy-mAv" id="c8I-HS-4ma"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Hvk-EN-oSi"/>
+                </tableViewController>
             </objects>
-            <point key="canvasLocation" x="1165" y="3025"/>
+            <point key="canvasLocation" x="1168" y="2960"/>
         </scene>
+        <!--Info View Controller - Info View Controller-->
         <scene sceneID="0D0-QG-XlX">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Usp-kz-r9z" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -198,6 +219,7 @@
             </objects>
             <point key="canvasLocation" x="619" y="845"/>
         </scene>
+        <!--Faculty View Controller - Contact View Controller-->
         <scene sceneID="9e8-J1-xbY">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Sh-yD-h5w" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -238,6 +260,7 @@
             </objects>
             <point key="canvasLocation" x="1151" y="578"/>
         </scene>
+        <!--Detailed Faculty View Controller - Contact Details-->
         <scene sceneID="CNF-la-ZxW">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Y7-wd-tAW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -394,6 +417,7 @@
             </objects>
             <point key="canvasLocation" x="1595" y="585"/>
         </scene>
+        <!--Home View Controller - Home-->
         <scene sceneID="bB0-1e-4QK">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fg9-Ny-ZWG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -496,21 +520,21 @@
                                     <segue destination="lZW-l4-oU2" kind="push" id="A9v-tp-hAh"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Contacts" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" minimumFontSize="10" id="Fif-H1-HSO">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Contacts" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" id="Fif-H1-HSO">
                                 <rect key="frame" x="252" y="239" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Twitter" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" minimumFontSize="10" id="Kc5-Y6-kGK">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Twitter" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" id="Kc5-Y6-kGK">
                                 <rect key="frame" x="25" y="327" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Facebook" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" minimumFontSize="10" id="JI2-S4-5ZU">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Facebook" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" id="JI2-S4-5ZU">
                                 <rect key="frame" x="97" y="328" width="49" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
@@ -529,31 +553,31 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Phn-Sd-aeT" kind="push" id="kvo-8e-PHC"/>
+                                    <segue destination="AOo-jy-mAv" kind="push" id="pJx-2L-TDB"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Videos" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" minimumFontSize="10" id="AiY-G8-4t3">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Videos" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" id="AiY-G8-4t3">
                                 <rect key="frame" x="173" y="328" width="49" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Map" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" minimumFontSize="4" id="yf2-uX-biB">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Map" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="4" adjustsFontSizeToFit="NO" id="yf2-uX-biB">
                                 <rect key="frame" x="176" y="239" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="News" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" minimumFontSize="4" id="u1j-6n-UAN">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="News" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="4" adjustsFontSizeToFit="NO" id="u1j-6n-UAN">
                                 <rect key="frame" x="100" y="239" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Courses" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" minimumFontSize="4" id="jVN-hK-ygK">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Courses" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="4" adjustsFontSizeToFit="NO" id="jVN-hK-ygK">
                                 <rect key="frame" x="25" y="239" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
@@ -575,7 +599,7 @@
                                     <action selector="openInfoView:" destination="KEA-2Q-hIT" eventType="touchUpInside" id="XNf-Ai-ffb"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="SCHOOL OF COMPUTER &amp; INFORMATION SCIENCES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" adjustsFontSizeToFit="NO" minimumFontSize="3" id="go1-SK-2cW">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="SCHOOL OF COMPUTER &amp; INFORMATION SCIENCES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="3" adjustsFontSizeToFit="NO" id="go1-SK-2cW">
                                 <rect key="frame" x="26" y="15" width="268" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
@@ -590,6 +614,7 @@
             </objects>
             <point key="canvasLocation" x="619" y="230"/>
         </scene>
+        <!--Navigation Controller-->
         <scene sceneID="HP9-Ut-17k">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AT8-HY-hwb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -606,6 +631,7 @@
             </objects>
             <point key="canvasLocation" x="124" y="230"/>
         </scene>
+        <!--News View Controller - News View Controller-->
         <scene sceneID="xr0-IC-PTK">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Te-eR-uA4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -658,6 +684,7 @@
             </objects>
             <point key="canvasLocation" x="1151" y="-579"/>
         </scene>
+        <!--News Detail View Controller - News-->
         <scene sceneID="Phv-eu-ayf">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R16-cb-ed3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -703,6 +730,7 @@
             </objects>
             <point key="canvasLocation" x="1595" y="-574"/>
         </scene>
+        <!--School View Controller - School View Controller-->
         <scene sceneID="ORt-EN-pbX">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gW-kv-pyl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -758,6 +786,7 @@
             </objects>
             <point key="canvasLocation" x="1151" y="2"/>
         </scene>
+        <!--Detail View Controller-->
         <scene sceneID="KqF-HD-JVD">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y3Z-wa-cD0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -834,6 +863,7 @@
             </objects>
             <point key="canvasLocation" x="2523" y="2"/>
         </scene>
+        <!--Terms View Controller - Terms-->
         <scene sceneID="sLv-71-d1t">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MKd-VL-LQV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -883,6 +913,7 @@
             </objects>
             <point key="canvasLocation" x="1595" y="2"/>
         </scene>
+        <!--Courses View Controller - Course List-->
         <scene sceneID="ttb-cZ-dHT">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vs4-hb-hb2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1029,6 +1060,9 @@
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
             </relationships>
         </class>
+        <class className="PullRefreshTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PullRefreshTableViewController.h"/>
+        </class>
         <class className="SchoolViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SchoolViewController.h"/>
             <relationships>
@@ -1038,10 +1072,10 @@
         <class className="TermsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TermsViewController.h"/>
         </class>
-        <class className="TwitterViewController" superclassName="UITableViewController">
+        <class className="TwitterViewController" superclassName="PullRefreshTableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TwitterViewController.h"/>
         </class>
-        <class className="YouTubeViewController" superclassName="UIViewController">
+        <class className="YouTubeViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/YouTubeViewController.h"/>
         </class>
     </classes>

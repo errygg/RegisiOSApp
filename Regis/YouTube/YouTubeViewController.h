@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GDataYouTube.h"
+#import "GDataServiceGoogleYouTube.h"
 
-@interface YouTubeViewController : UIViewController
+
+@interface YouTubeViewController : UITableViewController {
+    GDataFeedYouTubeVideo *feed;
+}
+
+@property (nonatomic, retain) GDataFeedYouTubeVideo *feed;
 
 @end

@@ -35,6 +35,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
+    NSLog(@"gets here");
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -71,6 +72,8 @@
 
 - (void) loadFaculty {
     
+    NSLog(@"loading faculty");
+    
     RKLogConfigureByName("RestKit/ObjectMapping", RKLogLevelTrace);
     RKLogConfigureByName("RestKit/Network", RKLogLevelTrace);
     RKObjectManager *manager = [RKObjectManager objectManagerWithBaseURL:gRegisApplicationBaseURL];
@@ -86,7 +89,8 @@
     [objectMapping mapKeyPath:@"title" toAttribute:@"title"];
     
     [manager loadObjectsAtResourcePath:@"/contacts" delegate:self];
-
+    
+    NSLog(@"loaded faculty");
 
 }
 
@@ -96,8 +100,10 @@
 }
 
 - (void)objectLoader:(RKObjectLoader *)objectLoader didFailWithError:(NSError *)error {
+    NSLog(@"Gets here");
     UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Error!" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alert show];
+
 }
 
 @end

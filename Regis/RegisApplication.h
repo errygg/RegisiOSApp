@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <RestKit/RestKit.h>
 
 // Import the base URL defined in the app delegate
-extern NSString* gRegisApplicationBaseURL;
+extern NSURL *gRegisApplicationBaseURL;
