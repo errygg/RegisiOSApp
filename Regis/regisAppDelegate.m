@@ -7,7 +7,7 @@
 //
 
 #import "regisAppDelegate.h"
-NSString *gRegisApplicationBaseURL = nil;
+NSURL *gRegisApplicationBaseURL = nil;
 
 @implementation regisAppDelegate
 
@@ -21,7 +21,7 @@ NSString *gRegisApplicationBaseURL = nil;
 {
 
     // Localhost URL for testing
-    gRegisApplicationBaseURL = @"http://localhost:8080";
+    gRegisApplicationBaseURL = [NSURL URLWithString:@"http://localhost:8080"];
     
     // Interim URL until the cloud host is running
     //gRegisApplicationBaseURL = @"http://ec2-107-22-73-92.compute-1.amazonaws.com";
