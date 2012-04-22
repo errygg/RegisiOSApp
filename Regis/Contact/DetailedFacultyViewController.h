@@ -27,12 +27,12 @@
 @property (nonatomic, retain) IBOutlet UILabel *website;
 @property (nonatomic, retain) Faculty *facultySelected;
 
-- (IBAction)addNewContactButtonSelected;
-- (IBAction)addExistingContactButtonSelected;
-- (IBAction)addContactToFavorites;
-- (IBAction)emailFaculty;
-- (IBAction)callFaculty;
-- (IBAction)openFacultyWebsite;
+- (IBAction) addNewContactButtonSelected;
+- (IBAction) addExistingContactButtonSelected;
+- (IBAction) addContactToFavorites;
+- (IBAction) emailFaculty;
+- (IBAction) callFaculty;
+- (IBAction) openFacultyWebsite;
 - (void) sendEmailTo:(NSString *)to;
 
 @end

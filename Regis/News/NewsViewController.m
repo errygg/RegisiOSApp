@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
+    [self fetchNews];
+}
+
+- (void)fetchNews {
     RSSParser *parser = [[RSSParser alloc] initWithUrl:@"http://secure.regis.edu/regisfeeds/regisnewsrss.ashx"];
     parser.delegate = self;
     [parser parse];
@@ -66,9 +70,16 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
     NewsDetailViewController *newsDetail = [self.storyboard instantiateViewControllerWithIdentifier:@"NewsDetail"];
     [newsDetail setCurrentlySelectedRSSItem:[rssItems_ objectAtIndex:indexPath.row]];
     [self.navigationController pushViewController:newsDetail animated:YES];
+}
+
+- (void)refresh {
+    
+    [self performSelector:@selector(fetchNews) withObject:nil afterDelay:2.0];
+    [self stopLoading];
 }
 
 @end

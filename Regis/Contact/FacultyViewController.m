@@ -58,7 +58,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
     DetailedFacultyViewController *detail = [self.storyboard instantiateViewControllerWithIdentifier:@"AddressDetail"];
     [detail setFacultySelected:[facultyArray objectAtIndex:indexPath.row]];
     [self.navigationController pushViewController:detail animated:YES];

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		026FB1B41543BB4700B97E6A /* LinkedIn_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 026FB1B31543BB4700B97E6A /* LinkedIn_logo.png */; };
+		026FB1B71544587700B97E6A /* Program.m in Sources */ = {isa = PBXBuildFile; fileRef = 026FB1B61544587700B97E6A /* Program.m */; };
+		026FB1BE15445A3E00B97E6A /* Term.m in Sources */ = {isa = PBXBuildFile; fileRef = 026FB1BD15445A3E00B97E6A /* Term.m */; };
 		02ADBFAE15410E2E00DAD41F /* libGDataTouchStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02ADBFA515410D5E00DAD41F /* libGDataTouchStaticLib.a */; };
 		02ADC0EF15437D8B00DAD41F /* regis_ipad_low.png in Resources */ = {isa = PBXBuildFile; fileRef = 02ADC0EE15437D8B00DAD41F /* regis_ipad_low.png */; };
 		02CA637A153B921300730690 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CA636F153B917F00730690 /* libRestKit.a */; };
@@ -178,6 +181,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		026FB1B31543BB4700B97E6A /* LinkedIn_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LinkedIn_logo.png; sourceTree = "<group>"; };
+		026FB1B51544587700B97E6A /* Program.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Program.h; sourceTree = "<group>"; };
+		026FB1B61544587700B97E6A /* Program.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Program.m; sourceTree = "<group>"; };
+		026FB1BC15445A3E00B97E6A /* Term.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Term.h; sourceTree = "<group>"; };
+		026FB1BD15445A3E00B97E6A /* Term.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Term.m; sourceTree = "<group>"; };
 		02ADBF9615410D5D00DAD41F /* GData.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GData.xcodeproj; path = "../gdata-objectivec-client-read-only/Source/GData.xcodeproj"; sourceTree = "<group>"; };
 		02ADBFB11541151D00DAD41F /* GData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GData.h; sourceTree = "<group>"; };
 		02ADBFB21541151D00DAD41F /* GDataACL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataACL.h; sourceTree = "<group>"; };
@@ -635,6 +643,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		026FB1B8154459C800B97E6A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				250969BB1523985100CA7A28 /* Course.h */,
+				250969BC1523985100CA7A28 /* Course.m */,
+				026FB1B51544587700B97E6A /* Program.h */,
+				026FB1B61544587700B97E6A /* Program.m */,
+				250969E115239C3100CA7A28 /* School.h */,
+				250969E215239C3100CA7A28 /* School.m */,
+				026FB1BC15445A3E00B97E6A /* Term.h */,
+				026FB1BD15445A3E00B97E6A /* Term.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		026FB1B9154459E000B97E6A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				25834B001523949B00B2331C /* Faculty.h */,
+				250969B81523981400CA7A28 /* Faculty.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		026FB1BA154459F400B97E6A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				25834B041523949B00B2331C /* CoursesViewController.h */,
+				25834B051523949B00B2331C /* CoursesViewController.m */,
+				25834B061523949B00B2331C /* DegreesViewController.h */,
+				25834B071523949B00B2331C /* DegreesViewController.m */,
+				25834B081523949B00B2331C /* DetailViewController.h */,
+				25834B091523949B00B2331C /* DetailViewController.m */,
+				25834B0A1523949B00B2331C /* ProgramViewController.h */,
+				25834B0B1523949B00B2331C /* ProgramViewController.m */,
+				25834B0C1523949B00B2331C /* SchoolViewController.h */,
+				25834B0D1523949B00B2331C /* SchoolViewController.m */,
+				25834B0E1523949B00B2331C /* TermsViewController.h */,
+				25834B0F1523949B00B2331C /* TermsViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		026FB1BB15445A0500B97E6A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				25834AFE1523949B00B2331C /* DetailedFacultyViewController.h */,
+				25834AFF1523949B00B2331C /* DetailedFacultyViewController.m */,
+				25834B011523949B00B2331C /* FacultyViewController.h */,
+				25834B021523949B00B2331C /* FacultyViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		02ADBF9715410D5D00DAD41F /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -1081,6 +1143,7 @@
 		25834AB7152392E200B2331C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				026FB1B31543BB4700B97E6A /* LinkedIn_logo.png */,
 				253DD5A31527CED80002940E /* arrow_circle.png */,
 				253DD5A41527CED90002940E /* arrow_circle@2x.png */,
 				25834AB8152392E200B2331C /* address_book.png */,
@@ -1124,12 +1187,8 @@
 		25834AFD1523949B00B2331C /* Contact */ = {
 			isa = PBXGroup;
 			children = (
-				25834AFE1523949B00B2331C /* DetailedFacultyViewController.h */,
-				25834AFF1523949B00B2331C /* DetailedFacultyViewController.m */,
-				25834B001523949B00B2331C /* Faculty.h */,
-				250969B81523981400CA7A28 /* Faculty.m */,
-				25834B011523949B00B2331C /* FacultyViewController.h */,
-				25834B021523949B00B2331C /* FacultyViewController.m */,
+				026FB1B9154459E000B97E6A /* Models */,
+				026FB1BB15445A0500B97E6A /* View Controllers */,
 			);
 			path = Contact;
 			sourceTree = "<group>";
@@ -1137,22 +1196,8 @@
 		25834B031523949B00B2331C /* Course */ = {
 			isa = PBXGroup;
 			children = (
-				250969BB1523985100CA7A28 /* Course.h */,
-				250969BC1523985100CA7A28 /* Course.m */,
-				25834B041523949B00B2331C /* CoursesViewController.h */,
-				25834B051523949B00B2331C /* CoursesViewController.m */,
-				25834B061523949B00B2331C /* DegreesViewController.h */,
-				25834B071523949B00B2331C /* DegreesViewController.m */,
-				25834B081523949B00B2331C /* DetailViewController.h */,
-				25834B091523949B00B2331C /* DetailViewController.m */,
-				25834B0A1523949B00B2331C /* ProgramViewController.h */,
-				25834B0B1523949B00B2331C /* ProgramViewController.m */,
-				250969E115239C3100CA7A28 /* School.h */,
-				250969E215239C3100CA7A28 /* School.m */,
-				25834B0C1523949B00B2331C /* SchoolViewController.h */,
-				25834B0D1523949B00B2331C /* SchoolViewController.m */,
-				25834B0E1523949B00B2331C /* TermsViewController.h */,
-				25834B0F1523949B00B2331C /* TermsViewController.m */,
+				026FB1B8154459C800B97E6A /* Models */,
+				026FB1BA154459F400B97E6A /* View Controllers */,
 			);
 			path = Course;
 			sourceTree = "<group>";
@@ -1399,6 +1444,7 @@
 				253DD5A51527CEDA0002940E /* arrow_circle.png in Resources */,
 				253DD5A61527CEDA0002940E /* arrow_circle@2x.png in Resources */,
 				02ADC0EF15437D8B00DAD41F /* regis_ipad_low.png in Resources */,
+				026FB1B41543BB4700B97E6A /* LinkedIn_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1437,6 +1483,8 @@
 				250969BD1523985100CA7A28 /* Course.m in Sources */,
 				250969E315239C3100CA7A28 /* School.m in Sources */,
 				2515A686152427C900D39AD4 /* PullRefreshTableViewController.m in Sources */,
+				026FB1B71544587700B97E6A /* Program.m in Sources */,
+				026FB1BE15445A3E00B97E6A /* Term.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

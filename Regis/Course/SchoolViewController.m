@@ -9,6 +9,7 @@
 #import "SchoolViewController.h"
 #import "School.h"
 #import "RegisApplication.h"
+#import "ProgramViewController.h"
 
 @implementation SchoolViewController
 
@@ -55,10 +56,11 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    /*DetailedFacultyViewController *detail = [self.storyboard instantiateViewControllerWithIdentifier:@"AddressDetail"];
-    [detail setFacultySelected:[facultyArray_ objectAtIndex:indexPath.row]];
-    [self.navigationController pushViewController:detail animated:YES];*/
+    School *selectedSchool = [schoolArray objectAtIndex:indexPath.row];
+    NSLog(@"school id:%@", selectedSchool.schoolId);
+    ProgramViewController *programVC = [self.storyboard instantiateViewControllerWithIdentifier:@"Program"];
+    //[programVC setProgramsForSchools:[schoolArray objectAtIndex:indexPath.row]];
+    [self.navigationController pushViewController:programVC animated:YES];
     
 }
 
@@ -78,12 +80,14 @@
     [objectMapping mapKeyPath:@"id" toAttribute:@"schoolId"];
     
     [manager loadObjectsAtResourcePath:@"/schools" delegate:self];
+    NSLog(@"school object manager: %@", manager);
     
     
 }
 
 - (void)objectLoader:(RKObjectLoader *)objectLoader didLoadObjects:(NSArray *)objects {
     schoolArray = objects;
+    NSLog(@"schoolArray: %@", schoolArray);
     [self.tableView reloadData];
 }
 

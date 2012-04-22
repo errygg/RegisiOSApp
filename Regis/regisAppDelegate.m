@@ -21,10 +21,10 @@ NSURL *gRegisApplicationBaseURL = nil;
 {
 
     // Localhost URL for testing
-    gRegisApplicationBaseURL = [NSURL URLWithString:@"http://localhost:8080"];
+    //gRegisApplicationBaseURL = [NSURL URLWithString:@"http://localhost:8080"];
     
     // Interim URL until the cloud host is running
-    //gRegisApplicationBaseURL = @"http://ec2-107-22-73-92.compute-1.amazonaws.com";
+    gRegisApplicationBaseURL = [NSURL URLWithString:@"http://ec2-204-236-199-59.compute-1.amazonaws.com/"];
     
     // Regis Cloud URL
     // TBD

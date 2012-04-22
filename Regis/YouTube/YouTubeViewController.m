@@ -3,7 +3,7 @@
 //  RegisApplication
 //
 //  Created by Erik Rygg on 3/28/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Regis University. All rights reserved.
 //
 
 #import "YouTubeViewController.h"
@@ -26,10 +26,11 @@
     
     NSString *uploadsID = kGDataYouTubeUserFeedIDUploads;
 
-    NSURL *feedURL = [GDataServiceGoogleYouTube youTubeURLForUserID:@"errygg" userFeedID:uploadsID];
+    NSURL *feedURL = [GDataServiceGoogleYouTube youTubeURLForUserID:@"RegisUniversity" userFeedID:uploadsID];
 	[service fetchFeedWithURL:feedURL
                      delegate:self
             didFinishSelector:@selector(request:finishedWithFeed:error:)];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
     [super viewDidLoad];
 
 
@@ -40,18 +41,21 @@
     [self.tableView reloadData];
 }
 
-- (void)viewDidUnload {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (NSInteger)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [[feed entries] count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     static NSString *CellIdentifier = @"Cell";
     
@@ -59,7 +63,6 @@
     if( cell == nil ) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
     }
-    
     GDataEntryBase *entry = [[feed entries] objectAtIndex:indexPath.row];
     NSString *title = [[entry title] stringValue];
     NSArray *thumbNails = [[(GDataEntryYouTubeVideo *)entry mediaGroup] mediaThumbnails];
@@ -80,7 +83,7 @@
 	
         service_ = [[GDataServiceGoogleYouTube alloc] init];
 		
-		[service_ setUserAgent:@"AppWhirl-UserApp-1.0"];
+		[service_ setUserAgent:@"Regis_University-RegisApp-1.0"];
         [service_ setShouldCacheResponseData:YES];
 		[service_ setServiceShouldFollowNextLinks:YES];
 	}

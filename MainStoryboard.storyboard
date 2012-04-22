@@ -95,7 +95,7 @@
             </objects>
             <point key="canvasLocation" x="1165" y="2375"/>
         </scene>
-        <!--You Tube View Controller-->
+        <!--You Tube View Controller - YouTube-->
         <scene sceneID="hyT-QO-CO9">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="83Z-TW-v7r" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -120,7 +120,7 @@
                             <outlet property="delegate" destination="AOo-jy-mAv" id="c8I-HS-4ma"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Hvk-EN-oSi"/>
+                    <navigationItem key="navigationItem" title="YouTube" id="Hvk-EN-oSi"/>
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="1168" y="2960"/>
@@ -556,8 +556,27 @@
                                     <segue destination="AOo-jy-mAv" kind="push" id="pJx-2L-TDB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="dLM-Lg-qkV">
+                                <rect key="frame" x="244" y="268" width="56" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="LinkedIn_logo.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Videos" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" id="AiY-G8-4t3">
                                 <rect key="frame" x="173" y="328" width="49" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="LinkedIn" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" id="ViN-Fl-bIj">
+                                <rect key="frame" x="248" y="328" width="49" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -673,9 +692,7 @@
                             <outlet property="delegate" destination="fdW-OB-LUW" id="3Sf-qo-rb2"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="News" id="gaT-pD-xxE">
-                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="8n4-0C-mkv"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="News" id="gaT-pD-xxE"/>
                     <connections>
                         <outlet property="tableView" destination="63j-Sd-nGj" id="GGY-UU-xf8"/>
                         <segue destination="DSl-cD-c3L" kind="push" id="sQ9-Mu-Aug"/>
@@ -781,6 +798,7 @@
                     <navigationItem key="navigationItem" title="Schools" id="oaJ-Ix-Mmz"/>
                     <connections>
                         <outlet property="tableView" destination="Yv8-iY-7Zo" id="zcq-v0-Cc5"/>
+                        <segue destination="4Sz-oa-ZxX" kind="push" id="tl7-Nq-RcN"/>
                     </connections>
                 </viewController>
             </objects>
@@ -863,11 +881,11 @@
             </objects>
             <point key="canvasLocation" x="2523" y="2"/>
         </scene>
-        <!--Terms View Controller - Terms-->
+        <!--Program View Controller - Programs-->
         <scene sceneID="sLv-71-d1t">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MKd-VL-LQV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="Terms" autoresizesArchivedViewToFullSize="NO" title="Terms" id="4Sz-oa-ZxX" customClass="TermsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Program" autoresizesArchivedViewToFullSize="NO" title="Programs" id="4Sz-oa-ZxX" customClass="ProgramViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="40j-pB-zzb">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -904,7 +922,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Terms" id="hne-bF-xWI"/>
+                    <navigationItem key="navigationItem" title="Programs" id="hne-bF-xWI"/>
                     <connections>
                         <outlet property="view" destination="kBF-Oz-ti6" id="BBZ-Dh-VeK"/>
                         <segue destination="rw6-5U-6cS" kind="push" id="9QI-xw-MF4"/>
@@ -968,11 +986,12 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2085" y="2"/>
+            <point key="canvasLocation" x="2029" y="2"/>
         </scene>
     </scenes>
     <resources>
         <image name="Default@2x.png" width="640" height="960"/>
+        <image name="LinkedIn_logo.png" width="512" height="512"/>
         <image name="address_book.png" width="59" height="60"/>
         <image name="arrow_back.png" width="24" height="24"/>
         <image name="arrow_forward.png" width="24" height="24"/>
@@ -1054,8 +1073,14 @@
                 <relationship kind="outlet" name="titleTextView" candidateClass="UITextView"/>
             </relationships>
         </class>
-        <class className="NewsViewController" superclassName="UIViewController">
+        <class className="NewsViewController" superclassName="PullRefreshTableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NewsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="ProgramViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ProgramViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
             </relationships>
@@ -1068,9 +1093,6 @@
             <relationships>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
             </relationships>
-        </class>
-        <class className="TermsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TermsViewController.h"/>
         </class>
         <class className="TwitterViewController" superclassName="PullRefreshTableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TwitterViewController.h"/>
