@@ -7,8 +7,6 @@
 //
 
 #import "regisAppDelegate.h"
-#import <RestKit/RestKit.h>
-
 NSString *gRegisApplicationBaseURL = nil;
 
 @implementation regisAppDelegate
