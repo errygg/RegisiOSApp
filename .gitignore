@@ -1,0 +1,13 @@
+*.pbxuser
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcclassmodel/
+xcuserdata/
+*.build/
+DerivedData/
+.svn
+.DS_Store
+gdata-objectivec-client-read-only/
+RestKit/

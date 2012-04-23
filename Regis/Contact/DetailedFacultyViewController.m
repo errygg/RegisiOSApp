@@ -14,16 +14,18 @@
 @synthesize lastName = lastName_;
 @synthesize phoneNum = phoneNum_;
 @synthesize emailAddr = emailAddr_;
-@synthesize website = website_;
+@synthesize title = title_;
 @synthesize facultySelected = facultySelected_;
 
 - (void)viewDidLoad {
 
     [super viewDidLoad];
-    firstName_.text = facultySelected_.firstName;
-    lastName_.text = facultySelected_.lastName;
+    
+    firstName_.text = [facultySelected_.firstName stringByAppendingString:@" "];
+    firstName_.text = [firstName_.text stringByAppendingString:facultySelected_.lastName];
     emailAddr_.text = facultySelected_.email;
     phoneNum_.text = facultySelected_.busPhone;
+    title_.text = facultySelected_.title;
 
 }
 

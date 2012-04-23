@@ -255,8 +255,8 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oPr-WX-Q9b">
-                                <rect key="frame" x="20" y="236" width="280" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="20" y="156" width="280" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="email:">
@@ -271,8 +271,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="A8A-OP-w07">
-                                <rect key="frame" x="20" y="281" width="280" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="20" y="111" width="280" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="phone:">
@@ -316,58 +316,34 @@
                                     <action selector="addExistingContactButtonSelected" destination="sI4-I9-d9p" eventType="touchUpInside" id="8Qv-Kw-VJm"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="First Name" lineBreakMode="tailTruncation" minimumFontSize="10" id="lft-XX-qwO">
-                                <rect key="frame" x="124" y="29" width="176" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name" lineBreakMode="tailTruncation" minimumFontSize="10" id="lft-XX-qwO">
+                                <rect key="frame" x="104" y="47" width="176" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" label="First Name"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Last Name" lineBreakMode="tailTruncation" minimumFontSize="10" id="Z5D-EW-x2A">
-                                <rect key="frame" x="124" y="58" width="176" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Title" lineBreakMode="tailTruncation" minimumFontSize="10" id="UfS-Hd-8DI">
+                                <rect key="frame" x="104" y="70" width="176" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" label="Last Name"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mVr-mX-Wzt">
-                                <rect key="frame" x="20" y="326" width="280" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="website:">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="openFacultyWebsite" destination="sI4-I9-d9p" eventType="touchUpInside" id="vHD-SV-Evv"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Email" lineBreakMode="tailTruncation" minimumFontSize="10" id="hYn-Jg-BC9">
-                                <rect key="frame" x="100" y="244" width="200" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <accessibility key="accessibilityConfiguration" label="Email"/>
+                                <accessibility key="accessibilityConfiguration" label="First Name"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Phone" lineBreakMode="tailTruncation" minimumFontSize="10" id="cYW-B9-kGo">
-                                <rect key="frame" x="100" y="289" width="200" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="104" y="119" width="176" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" label="Address"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Website" lineBreakMode="tailTruncation" minimumFontSize="10" id="6aE-WN-dwB">
-                                <rect key="frame" x="100" y="334" width="200" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <accessibility key="accessibilityConfiguration" label="Website"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Email" lineBreakMode="tailTruncation" minimumFontSize="10" id="Jvy-WF-7Bm">
+                                <rect key="frame" x="104" y="164" width="176" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="Address"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -387,16 +363,19 @@
                                     <action selector="addNewContactButtonSelected" destination="sI4-I9-d9p" eventType="touchUpInside" id="rxv-bt-5oC"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="man@2x.png" id="4Vw-xd-nFr">
+                                <rect key="frame" x="20" y="20" width="76" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Contact Details" id="URH-Kj-TYa"/>
                     <connections>
-                        <outlet property="emailAddr" destination="hYn-Jg-BC9" id="SOc-vl-v5e"/>
+                        <outlet property="emailAddr" destination="Jvy-WF-7Bm" id="LA9-cO-2RM"/>
                         <outlet property="firstName" destination="lft-XX-qwO" id="gMW-X4-8N7"/>
-                        <outlet property="lastName" destination="Z5D-EW-x2A" id="jXk-r3-Abu"/>
                         <outlet property="phoneNum" destination="cYW-B9-kGo" id="4cg-oe-6Tz"/>
-                        <outlet property="website" destination="6aE-WN-dwB" id="VS2-r9-Y7E"/>
+                        <outlet property="title" destination="UfS-Hd-8DI" id="JGK-2H-F1b"/>
                     </connections>
                 </viewController>
             </objects>
@@ -560,11 +539,11 @@
             </objects>
             <point key="canvasLocation" x="619" y="-368"/>
         </scene>
-        <!--Home View Controller - Home-->
+        <!--View Controller-->
         <scene sceneID="bB0-1e-4QK">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fg9-Ny-ZWG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="Home" title="Home" modalTransitionStyle="flipHorizontal" id="KEA-2Q-hIT" customClass="HomeViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="" modalTransitionStyle="flipHorizontal" id="KEA-2Q-hIT" sceneMemberID="viewController">
                     <view key="view" autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" id="ayj-JE-6CT">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1121,6 +1100,7 @@
         <image name="facebook.png" width="256" height="256"/>
         <image name="globe.png" width="24" height="24"/>
         <image name="home@2x.png" width="48" height="48"/>
+        <image name="man@2x.png" width="64" height="64"/>
         <image name="map.png" width="59" height="60"/>
         <image name="news.png" width="59" height="60"/>
         <image name="twitter.png" width="256" height="256"/>
@@ -1154,7 +1134,7 @@
                 <relationship kind="outlet" name="firstName" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="lastName" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="phoneNum" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="website" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="title" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="FacultyViewController" superclassName="UIViewController">

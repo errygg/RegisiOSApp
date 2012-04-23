@@ -15,7 +15,7 @@
     UILabel *lastName_;
     UILabel *phoneNum_;
     UILabel *emailAddr_;
-    UILabel *website_;
+    UILabel *title_;
     Faculty *facultySelected_;
     
 }
@@ -24,7 +24,7 @@
 @property (nonatomic, retain) IBOutlet UILabel *lastName;
 @property (nonatomic, retain) IBOutlet UILabel *phoneNum;
 @property (nonatomic, retain) IBOutlet UILabel *emailAddr;
-@property (nonatomic, retain) IBOutlet UILabel *website;
+@property (nonatomic, retain) IBOutlet UILabel *title;
 @property (nonatomic, retain) Faculty *facultySelected;
 
 - (IBAction) addNewContactButtonSelected;
