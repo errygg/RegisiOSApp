@@ -21,16 +21,11 @@
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-
 }
 
 - (IBAction)openInfoView:(id)sender {
-    NSLog(@"Opening Info view");
     InfoViewController *infoView = [self.storyboard instantiateViewControllerWithIdentifier:@"Info"];
-    NSLog(@"Controller: %@", infoView);
-    //infoView.modalPresentationStyle = UIModalTransitionStyleFlipHorizontal;
     [self.navigationController presentModalViewController:infoView animated:YES];
 }
 
